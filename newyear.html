@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 New Year</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">🎄🎅 Christmas</a> |
+        <a href="newyear.html">🎉 New Year</a>
+    </nav>
+
+    <h1>🎉 Happy New Year 🎆</h1>
+    <p>These songs are for you. Enjoy and celebrate!</p>
+    <p class="description">
+        A fun New Year remix perfect for countdown night 🎉
+    </p>
+    <h2 id="countdown"></h2>
+
+<script>
+const newYear = new Date("January 1, 2026 00:00:00").getTime();
+setInterval(() => {
+    const now = new Date().getTime();
+    const diff = newYear - now;
+    document.getElementById("countdown").innerHTML =
+        Math.floor(diff / (1000 * 60 * 60 * 24)) + " days left until New Year 🎆";
+}, 1000);
+</script>
+    <ol>
+        <li><iframe src="https://www.youtube.com/embed/6wHOeCUhEnk" allowfullscreen></iframe></li>
+        <li><iframe src="https://www.youtube.com/embed/f9IXidtEuYo" allowfullscreen></iframe></li>
+        <li><iframe src="https://www.youtube.com/embed/jZuFzl4DeBE" allowfullscreen></iframe></li>
+        <li><iframe src="https://www.youtube.com/embed/cyJlnbn4xGc" allowfullscreen></iframe></li>
+        <li><iframe src="https://www.youtube.com/embed/0soawtYqFOo" allowfullscreen></iframe></li>
+        <li><iframe src="https://www.youtube.com/embed/CmlR-ImMmfY" allowfullscreen></iframe></li>
+        <li><iframe src="https://www.youtube.com/embed/iDUdaLj0PHc" allowfullscreen></iframe></li>
+    </ol>
+</body>
+
+</html>
